@@ -599,7 +599,10 @@ img {
 
 .projects-list-item {
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 30px;
+}
+
+.opis {
+  padding-top: 20px;
 }
 
 .projects-list-item:hover {
