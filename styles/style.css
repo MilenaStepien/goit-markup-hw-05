@@ -18,6 +18,7 @@
   --opacity: rgba(47, 48, 58, 0.4);
   --background-social: #ffffff1a;
   --background-social-team: #afb1b8;
+  --nd-color: currentColor;
 }
 
 body {
@@ -130,11 +131,14 @@ img {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
+}
+
+.navigation-list-link {
   color: var(--fth-color);
 }
 
-.address-mail,
-.address-phone-number {
+.header .address-mail,
+.header .address-phone-number {
   color: var(--nd-color);
 }
 
@@ -431,6 +435,7 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .footer .address-phone-number {
@@ -438,6 +443,13 @@ img {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.footer .address-phone-number:hover,
+.footer .address-phone-number:focus,
+.footer .address-phone-number:active {
+  color: var(--main-color);
 }
 
 .address {
@@ -448,7 +460,7 @@ img {
   color: var(--rd-color);
 }
 
-.footer .address-phone-number {
+.footer .address-phone-number .footer .address-mail {
   padding-bottom: 60px;
 }
 
