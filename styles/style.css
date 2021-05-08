@@ -621,7 +621,11 @@ img {
   overflow: hidden;
 }
 
-.projects-list-item-describe:hover {
+.projects-list-item:hover .projects-list-item-describe {
+  transform: translateY(0);
+}
+
+.projects-list-item-describe {
   position: absolute;
   top: 0px;
   left: 0;
