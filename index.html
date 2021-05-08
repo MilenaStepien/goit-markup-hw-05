@@ -20,7 +20,7 @@
             <a class="navigation-logo navigation-logo-header link" href="/index.html">
                 <span class="logo-first-part">Web</span><span class="logo-second-part">Studio</span></a>
             <ul class="navigation-list list">
-                <li class="navigation-list-item">
+                <li class="navigation-list-item active-page-agencja">
                     <a class="navigation-list-link link" href="#">Agencja</a></li>
                 <li class="navigation-list-item">
                     <a class="navigation-list-link link" href="./portfolio.html">Portfolio</a></li>
@@ -50,7 +50,7 @@
             <div class="container">
                 <h1 class="title-h1">EFEKTYWNE ROZWIĄZANIA
                     <br>DLA WASZEGO BIZNESU</h1>
-<button class="modal-button" type="button">Zamów usługę</button>
+<button class="modal-button" type="button" data-modal-open>Zamów usługę</button>
             </div>
         </section>
         <section class="section">
@@ -108,17 +108,26 @@
                         alt="Jednoczesne wyswietlanie na tablecie i monitorze kodu pisanego na klawiaturze" 
                         width="370"
                         height="294" />
-                </li>
+                        <div class="list-describe">
+                        <p class="list-describe-text">aplikacje komputerowe</p>
+                        </div>
+                    </li>
                 <li>
                     <img class="photo" src="./images/about-us/2.jpg" 
                         alt="Szablony stron na smartfony"
                         width="370" 
                         height="294" />
-                </li>
+                        <div class="list-describe">
+                        <p class="list-describe-text">aplikacje mobilne</p>
+                        </div>
+                    </li>
                 <li>
                     <img class="photo" src="./images/about-us/3.jpg" alt="Paleta kolorów" width="370"
                         height="294" />
-                </li>
+                        <div class="list-describe">
+                        <p class="list-describe-text">rozwiązania graficzne</p>
+                        </div>
+                    </li>
             </ul>
             </div>
             </section>
@@ -373,5 +382,12 @@
 </ol>
     </div>
        </footer>
+<div class="backdrop is-hidden" data-modal>
+<div class="modal">
+    <button type="button" class="close-btn" data-modal-close>x</button>
+</div>
+</div>
+<script src="./js/modaj.js"></script>
+
 </body>
 </html>

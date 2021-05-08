@@ -5,7 +5,7 @@
   --main-background-color: #30313b;
   --second-background-color: #f5f4fa;
   --nd-color: #757575;
-  --rd-color: #ffffff;
+  --rd-color: rgb(255, 255, 255);
   --fth-color: #212121;
   --border-color-header: #ececec;
   --border-color: #eeeeee;
@@ -131,6 +131,30 @@ img {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
+}
+
+.active-page-agencja::after {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  content: "";
+  background: var(--main-color);
+  height: 4px;
+  width: 53px;
+  margin-top: 28px;
+  border-radius: 2px;
+}
+
+.active-page-portfolio::after {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  content: "";
+  background: var(--main-color);
+  height: 4px;
+  width: 58px;
+  margin-top: 28px;
+  border-radius: 2px;
 }
 
 .navigation-list-link {
@@ -306,6 +330,25 @@ img {
 .czym-sie-zajmujemy,
 .our-customers {
   padding-bottom: 94px;
+}
+
+.list-describe {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  bottom: -125px;
+  background: rgba(47, 48, 58, 0.8);
+  font-style: 400;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 1;
 }
 
 .nasz-zespol {
@@ -566,6 +609,33 @@ img {
   cursor: pointer;
 }
 
+.project-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-list-item-describe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 294px;
+  background-color: var(--main-color);
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects-list-item-describe-text {
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--rd-color);
+  padding: 49px 25px;
+  background-color: var(--main-color);
+}
+
 .button-filtr:focus,
 .button-filtr:hover,
 .button-filtr:active {
@@ -604,4 +674,51 @@ img {
   padding-left: 24px;
   padding-top: 4px;
   padding-bottom: 20px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: cubic-bezier(0.05, 0.79, 0.83, 0.67) 500ms;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 528px;
+  width: 581px;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 4px;
+  color: #000;
+}
+
+.close-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
