@@ -338,6 +338,10 @@ img {
   margin-left: 30px;
 }
 
+.label {
+  margin-left: -30px;
+}
+
 .list-describe-text {
   position: absolute;
   bottom: 0;
