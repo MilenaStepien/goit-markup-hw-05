@@ -156,6 +156,10 @@ img {
   border-radius: 2px;
 }
 
+.current {
+  color: var(--main-color);
+}
+
 .header .address-mail,
 .header .address-phone-number {
   color: var(--nd-color);
