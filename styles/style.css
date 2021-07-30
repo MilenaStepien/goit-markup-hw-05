@@ -132,6 +132,10 @@ img {
   letter-spacing: 0.02em;
 }
 
+.navigation-list-link {
+  color: var(--fth-color);
+}
+
 .active-page-agency::after {
   display: flex;
   align-items: center;
