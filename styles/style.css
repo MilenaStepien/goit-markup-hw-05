@@ -162,7 +162,7 @@ img {
 
 .header .address-mail,
 .header .address-phone-number {
-  color: var(--nd-color);
+  color: #757575;
 }
 
 .address-icon-envelope {
@@ -222,7 +222,6 @@ img {
     ),
     url("../images/hero/Img.jpg");
   background-size: cover;
-  max-width: 1600px;
 }
 
 .section {
@@ -593,14 +592,16 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 34px;
+  margin-bottom: 64px;
 }
 
 .projects-list-item {
   border: 1px solid var(--border-color);
 }
 
-.opis {
+.describe {
   padding-top: 20px;
+  padding-left: 24px;
 }
 
 .projects-list-item:hover {
@@ -659,17 +660,12 @@ img {
 }
 
 .list-menu {
-  width: 322px;
-  height: 36px;
-  left: 239px;
-  top: 576px;
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 18px;
   line-height: 0.2;
   letter-spacing: 0.06em;
   color: var(--fth-color);
-  padding-left: 24px;
 }
 
 .projects-list-item {
@@ -677,11 +673,7 @@ img {
   margin-bottom: 30px;
 }
 
-.project-list-photo {
-  margin-bottom: 20px;
-}
 .category {
-  padding-left: 24px;
   padding-top: 4px;
   padding-bottom: 20px;
   color: #757575;
